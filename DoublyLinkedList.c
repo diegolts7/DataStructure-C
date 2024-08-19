@@ -48,10 +48,10 @@ void imprimirLista(node *lista){
   
   if(aux != NULL){
     
-    imprimirLista(aux->prox);
-    
     printf("Nome: %s\nCargo: %s\nSexo: %c\nIdade: %d\nMatricula: %d\n",aux->nome,aux->cargo,aux->sexo,aux->idade,aux->matricula);
     printf("\n");
+
+    imprimirLista(aux->prox);
     
   }
 }
